@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GPA Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <title>Redirecting...</title>
+    <script>
+        // Check if the user is logged in
+        const currentUser = localStorage.getItem("currentUser");
+
+        // Redirect to login.html if no user is logged in
+        if (!currentUser) {
+            window.location.href = "login.html";
+        } else {
+            window.location.href = "index.html";
+        }
+    </script>
 </head>
 <body>
     <h1>Welcome to GPA Calculator</h1>
